@@ -17,22 +17,9 @@ export default function Header() {
               <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
               <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
           </Helmet>
-        <StaticQuery
-            query={graphql`
-            query HeadingQuery {
-                site {
-                    siteMetadata {
-                        title
-                    }
-                }
-            }
-            `}
-            render={data => (
             <header>
-                <h1>{data.site.siteMetadata.title} <i className="fa fa-thumbs-up" aria-hidden="true"></i></h1>
+                <h1>MAGIC DECORS <i className="fa fa-thumbs-up" aria-hidden="true"></i></h1>
             </header>
-            )}
-        />
 
             <ul className="list-group list-group-horizontal">
               <li className="list-group-item"><Link to="/">Home</Link></li>
