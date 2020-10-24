@@ -2,13 +2,14 @@ import firebase from "firebase/app"
 import "firebase/firestore"
 
 var firebaseConfig = {
-  apiKey: "AIzaSyApmH7JiLc_4yj9VVADydk3VzqvupxYaoo",
-  authDomain: "website-comments-7d10c.firebaseapp.com",
-  databaseURL: "https://website-comments-7d10c.firebaseio.com",
-  projectId: "website-comments-7d10c",
-  storageBucket: "website-comments-7d10c.appspot.com",
-  messagingSenderId: "263336228337",
-  appId: "1:263336228337:web:4c06954f214ff52d5e8050"
+  apiKey: "AIzaSyBjhdzCRBsf_skaBjRDaeKU_X4LNoRXhuU",
+  authDomain: "magic-decors-b1aa5.firebaseapp.com",
+  databaseURL: "https://magic-decors-b1aa5.firebaseio.com",
+  projectId: "magic-decors-b1aa5",
+  storageBucket: "magic-decors-b1aa5.appspot.com",
+  messagingSenderId: "227399415661",
+  appId: "1:227399415661:web:8dbce5bc73f3c86b1fcc64",
+  measurementId: "G-46RCH72320"
 };
 
 firebase.initializeApp(firebaseConfig)

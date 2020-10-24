@@ -4,12 +4,9 @@ import { CartContext } from "../../shopping.js"
 import { StaticQuery, graphql } from "gatsby"
 import Helmet from "react-helmet"
 
-
 export default function Header() {
     
     const { itemCount } = useContext(CartContext)
-    
-    
     
     return (
         <>

@@ -14,8 +14,12 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@react-native-community/masked-view": "^0.1.10",
+    "@react-navigation/native": "^5.7.6",
+    "@react-navigation/stack": "^5.9.3",
     "axios": "^0.20.0",
     "bootstrap": "^4.5.3",
+    "firebase": "^7.24.0",
     "gatsby": "^2.24.63",
     "gatsby-plugin-react-helmet": "^3.3.14",
     "gatsby-plugin-sass": "^2.3.14",
@@ -26,7 +30,12 @@
     "react-bootstrap-carousel": "^4.1.0",
     "react-copyright": "0.0.1",
     "react-dom": "^16.12.0",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-native": "^0.63.3",
+    "react-native-gesture-handler": "^1.8.0",
+    "react-native-reanimated": "^1.13.1",
+    "react-native-safe-area-context": "^3.1.8",
+    "react-native-screens": "^2.11.0"
   },
   "devDependencies": {
     "prettier": "2.1.1"
