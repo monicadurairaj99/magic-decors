@@ -32,9 +32,8 @@ export default function CheckoutForm() {
         firestore.collection(`orders`).add(customer).catch(err => {
             console.error('Error adding orders: ', err)})
 
-        //pass the control to confiramtion
-        
-        // axios.post("https://webhook.site/1022c860-ad18-46d0-9699-c8a6ad5ba435", customer);
+        //TODO:pass the control back to confiramtion page
+  
     }
 
     return (

@@ -1,6 +1,7 @@
 import React, { useContext } from "react"
 import { CartContext } from "../../shopping.js"
 
+
 export default function Cart() {
     const { items, taxes, subTotal, shipping, grandTotal } = useContext(CartContext);
 
@@ -30,13 +31,28 @@ export default function Cart() {
                                     <td>
                                         ${(item.qty * item.price).toFixed(2)}
                                     </td>
+                                    <td><button class="Remove">Remove</button></td>
+
                                 </tr>
                             )
                         })}
                         </tbody>
                     </table>
+                    <br/>
+
                 </div>
                 <div className="col-sm-4">
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
 
                     SubTotal: ${subTotal.toFixed(2)}
                     <br />
