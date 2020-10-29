@@ -1,7 +1,9 @@
-import React, { useState } from "react"
+import React, { useContext,useState } from "react"
 import axios from "axios"
 import { firestore } from "../../firebase.js"
-
+import { Link } from "@reach/router"
+import { CartContext } from "../../shopping.js"
+import { randomInt } from "crypto";
 
 export default function CheckoutForm() {
 
@@ -13,10 +15,10 @@ export default function CheckoutForm() {
     const [ city, setCity ] = useState("");
     const [ state, setState ] = useState("");
     const [ zipcode, setZipcode ] = useState("");
+    const { items, taxes, subTotal, shipping, grandTotal } = useContext(CartContext);
 
-
+    
     function saveOrder() {
-         //alert("This is sample cart, your order was not really completed.")
 
         let customer = {
             fullname: fullname,
@@ -26,14 +28,19 @@ export default function CheckoutForm() {
             addressLine2: addressLine2,
             city: city,
             state: state,
-            zipcode: zipcode
+            zipcode: zipcode,
+            items: items,
+            taxes: taxes,
+            subTotal: subTotal,
+            shipping: shipping,
+            grandTotal: grandTotal
         }
 
         firestore.collection(`orders`).add(customer).catch(err => {
             console.error('Error adding orders: ', err)})
+        window.localStorage.clear();
+        alert("your order is placed.we will send the confirmation by email");
 
-        //TODO:pass the control back to confiramtion page
-  
     }
 
     return (
@@ -82,6 +89,7 @@ export default function CheckoutForm() {
             </div>
 
             <button className="btn btn-lg btn-primary" onClick={() => saveOrder()}>Place Order</button>
+
         </>
     )
 }

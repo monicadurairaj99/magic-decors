@@ -1,7 +1,6 @@
 import React, { useContext } from "react"
 import { CartContext } from "../../shopping.js"
 
-
 export default function Cart() {
     const { items, taxes, subTotal, shipping, grandTotal } = useContext(CartContext);
 
@@ -19,7 +18,7 @@ export default function Cart() {
                             </tr>
                         </thead>
                         <tbody>
-                        {items.map(item => {
+                        {items.map(item => { 
                             return (
                                 <tr>
                                     <td>
@@ -31,7 +30,8 @@ export default function Cart() {
                                     <td>
                                         ${(item.qty * item.price).toFixed(2)}
                                     </td>
-                                    <td><button class="Remove">Remove</button></td>
+                                    <td>
+                                    </td>
 
                                 </tr>
                             )

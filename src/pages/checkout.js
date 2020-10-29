@@ -3,6 +3,8 @@ import Layout from "../components/layout.js"
 import Helmet from "react-helmet"
 import CheckoutForm from "../components/checkoutForm"
 import Cart from "../components/cart"
+import Header from "../components/header"
+
 
 export default function Checkout() {
 

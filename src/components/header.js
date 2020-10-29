@@ -4,7 +4,6 @@ import { CartContext } from "../../shopping.js"
 import Helmet from "react-helmet"
 
 export default function Header() {
-    
     const { itemCount } = useContext(CartContext)
     
     return (
@@ -15,33 +14,21 @@ export default function Header() {
           </Helmet>
           <div id="myContainer">
             <header>
-                <h1>MAGIC DECORS 
+                <h1>MAGIC DECORS
                 </h1>
             </header>
 
-            <ul className="list-group list-group-horizontal">
-              <li className="list-group-item"><Link to="/">Home</Link></li>
+            <ul className="d-flex flex-wrap list-group-horizontal d-flex justify-content-center">
+              <li className="list-group-item" id="item1" ><Link to="/">Home</Link> </li>
+              <li className="list-group-item" id="item2" ><Link to="shop">Shop</Link></li>
               <br/>
-              <li className="list-group-item"><Link to="shop">Shop</Link></li>
+              <li className="list-group-item" id="item3" ><Link to="about">About</Link></li>
               <br/>
-              <li className="list-group-item"><Link to="about">About</Link></li>
+              <li className="list-group-item" id="item4"><Link to="contact">Contact</Link></li>
               <br/>
-              <li className="list-group-item"><Link to="contact">Contact</Link></li>
+              <li className="list-group-item" id="item5" ><Link to="checkout">Check Out ({itemCount})</Link></li>
               <br/>
-              <li className="list-group-item"><Link to="checkout">Check Out</Link></li>
-              <br/>
-              <li className="list-group-item">
-
-                    {itemCount === 0 &&
-                        <strong>How about you buy something?</strong>
-                    }
-
-                    {itemCount > 0 &&
-                        <strong>You have {itemCount} item(s) in your cart!</strong>
-                    }
-
-              </li>
-              
+             
           </ul>
           </div>
 

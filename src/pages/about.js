@@ -5,40 +5,36 @@ import Carousel from 'react-bootstrap/Carousel'
 export default function About() {
     return(
         <Layout>
-            <div>About magic decor</div>
 <>
            <Carousel>
   <Carousel.Item interval={1000}>
     <img
       className="d-block w-100"
-      src="https://images.unsplash.com/photo-1534807775-7fe738b744a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1347&q=80"
-      alt="First slide"
+      src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+      alt="Wall Decor"
     />
     <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <h3>Wall Decor</h3>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item interval={500}>
     <img
       className="d-block w-100"
-      src="https://images.unsplash.com/photo-1534807775-7fe738b744a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1347&q=80"
+      src="https://images.unsplash.com/photo-1519643225200-94e79e383724?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
       alt="Third slide"
     />
     <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h3>Living Room</h3>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="https://images.unsplash.com/photo-1534807775-7fe738b744a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1347&q=80"
+      src="https://images.unsplash.com/photo-1564129902891-da885e5a13a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
       alt="Third slide"
     />
     <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <h3>Patio Decor</h3>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>

@@ -5,17 +5,14 @@ import Helmet from "react-helmet"
 import AddToCart from "../components/add-to-cart.js"
 
 
-
-
 export default function magicdecorTemplate({data}) {
   const MagicDecors = data.contentfulMagicDecors
-  
 
   return (
     <>
       <Helmet bodyAttributes={ { class: `product-page ${MagicDecors.sku}` } }>
         <title>{MagicDecors.name} | Magic Decors</title>
-        <meta name="description" value="Come try my React restaurant!"/>
+        <meta name="description" value="Shop with us!"/>
       </Helmet>
       <Layout>
       <div id="myContainer">

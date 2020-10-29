@@ -6,7 +6,6 @@ export default function Home() {
   return( 
     
   <Layout>
-    {/* <div>Hello world!</div> */}
     <>
            <Carousel>
   <Carousel.Item interval={1000}>

@@ -1,14 +1,17 @@
-import React from "react"
+import React,{useEffect, useState} from "react"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import Helmet from "react-helmet"
 
+
 export default function Shop({data}) {
+
   return( 
   <Layout>
     <Helmet>
     <title>Hello shop!</title>
     </Helmet>
+   
     <div class="row">
     {data.allContentfulMagicDecors.nodes.map((node, shop) => (
         <div class="col-md-3" key={shop}>
